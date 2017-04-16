@@ -91,6 +91,12 @@ apt_packs=[
 "tmux"
 
     ]
+
+# Python3 tools
+os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
+os.system("apt-get update")
+os.system("apt-get install -y pycharm-community")
+
 for p in apt_packs:
     os.system("apt-get install -y "+p)
 
