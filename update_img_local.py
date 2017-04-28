@@ -1,7 +1,7 @@
 
 import os
 
-user = 'veikherm'
+user = 'USERNAME'
 #careate bush script for install libs
 apt_packs=[
     'ffmpeg',
