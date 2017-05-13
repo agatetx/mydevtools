@@ -23,7 +23,8 @@ apt_packs=[
     "nano",
     "terminator",
     "vlc",
-    "htop"
+    "htop",
+    "locate"
     ]
 for p in apt_packs:
     os.system("apt-get install -y "+p)
