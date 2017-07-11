@@ -44,6 +44,16 @@ os.system("add-apt-repository -y ppa:caffeine-developers/ppa")
 os.system("apt-get update")
 os.system("apt-get install -y caffeine")
 
+# Cuda
+os.system('wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb -O cuda.deb')
+os.system("dpkg -i cuda.deb")
+os.system("sudo apt-get update")
+os.system("sudo apt-get install cuda")
+os.system("pip3 uninstall tensorflow")
+os.system("pip3 install tensorflow-gpu")
+
+
+
 # cd ~ ; ./src/mydevtools/install-opencv.sh | tee output_opencv.txt
 
 # MANUAL
