@@ -35,8 +35,8 @@ os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
 os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
 os.system("apt-get install -y python-pip python3-pip")
-os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb pyqt5 jupyter tensorflow")
-os.system("pip install numpy scipy zmq ipdb rpdb pyqt5 tensorflow")
+os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb pyqt5 jupyter")
+os.system("pip install numpy scipy zmq ipdb rpdb pyqt5")
 
 
 # Cafiene to Prevent Screen-Saver
@@ -49,9 +49,13 @@ os.system('wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_instal
 os.system("dpkg -i cuda.deb")
 os.system("sudo apt-get update")
 os.system("sudo apt-get install cuda")
-os.system("pip3 uninstall tensorflow")
 os.system("pip3 install tensorflow-gpu")
 
+# Cudnn
+os.system('wget https://www.dropbox.com/s/12hobmwc1ufxpqr/cudnn-8.0-linux-x64-v5.1.tgz?dl=0 -O cudnn.tgz')
+os.system('tar -xvzf cudnn.tgz -C /opt/cudnn/')
+os.system('mkdir /opt/cudnn/')
+os.system('''echo 'export LD_LIBRARY_PATH=/opt/cudnn/cuda/lib64:$LD_LIBRARY_PATH' >>~/.bashrc''')
 
 
 # cd ~ ; ./src/mydevtools/install-opencv.sh | tee output_opencv.txt
