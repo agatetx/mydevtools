@@ -3,7 +3,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
-sudo apt-get -y autoremove
+#sudo apt-get -y autoremove
 
 
 # INSTALL THE DEPENDENCIES
@@ -32,7 +32,7 @@ sudo apt-get install -y ant default-jdk
 # Documentation:
 sudo apt-get install -y doxygen
 
-
+cd ~
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv
