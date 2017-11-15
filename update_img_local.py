@@ -35,8 +35,8 @@ os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
 os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
 os.system("apt-get install -y python-pip python3-pip")
-os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb pyqt5 jupyter")
-os.system("pip install numpy scipy zmq ipdb rpdb pyqt5")
+os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb pyqt5 jupyter scikit-image cffi sklearn h5py")
+os.system("pip install numpy scipy zmq ipdb rpdb pyqt5 scikit-image cffi sklearn h5py")
 
 
 # Cafiene to Prevent Screen-Saver
