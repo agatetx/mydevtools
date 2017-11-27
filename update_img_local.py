@@ -35,11 +35,11 @@ os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
 os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
 os.system("apt-get install -y python-pip python3-pip")
-os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb pyqt5 jupyter scikit-image cffi sklearn h5py")
-os.system("pip install numpy scipy zmq ipdb rpdb pyqt5 scikit-image cffi sklearn h5py")
+os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb jupyter scikit-image cffi sklearn h5py")
+os.system("pip install numpy scipy zmq ipdb rpdb scikit-image cffi sklearn h5py")
 
 
-# wPython
+# wxPython
 os.system('apt-get install -y libgtk2.0-dev libgtk-3-dev libjpeg-dev libtiff-dev libsdl1.2-dev libgstreamer-plugins-base0.10-dev libnotify-dev freeglut3 freeglut3-dev libsm-dev libwebkitgtk-dev libwebkitgtk-3.0-dev')
 os.system("sudo pip install --upgrade --pre -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython")
 
