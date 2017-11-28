@@ -1,6 +1,9 @@
 
 import os
 
+os.system("apt-get -y update")
+os.system("apt-get -y upgrade")
+
 user = 'USERNAME'
 #careate bush script for install libs
 apt_packs=[
@@ -38,6 +41,10 @@ os.system("apt-get install -y python-pip python3-pip")
 os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb jupyter scikit-image cffi sklearn h5py")
 os.system("pip install numpy scipy zmq ipdb rpdb scikit-image cffi sklearn h5py")
 
+
+#Jupyter Lab
+os.system("pip install jupyterlab")
+os.system("jupyter serverextension enable --py jupyterlab --sys-prefix")
 
 # wxPython
 os.system('apt-get install -y libgtk2.0-dev libgtk-3-dev libjpeg-dev libtiff-dev libsdl1.2-dev libgstreamer-plugins-base0.10-dev libnotify-dev freeglut3 freeglut3-dev libsm-dev libwebkitgtk-dev libwebkitgtk-3.0-dev')
