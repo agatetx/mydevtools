@@ -39,8 +39,8 @@ os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
 os.system("apt-get install -y python-pip python3-pip")
 
-os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb jupyter scikit-image cffi sklearn h5py tqdm")
-os.system("pip install numpy scipy zmq ipdb rpdb scikit-image cffi sklearn h5py tqdm")
+os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb jupyter scikit-image cffi sklearn h5py tqdm more_itertools")
+os.system("pip install numpy scipy zmq ipdb rpdb scikit-image cffi sklearn h5py tqdm more_itertools")
 
 
 #Jupyter Lab
