@@ -66,6 +66,7 @@ os.system("sudo apt-get -y install cuda")
 os.system("pip3 install -y tensorflow-gpu")
 os.system("pip install -y tensorflow-gpu")
 
+
 # Cudnn 6
 os.system('wget https://www.dropbox.com/s/w2211kd0u0vgtgs/cudnn-8.0-linux-x64-v6.0.tgz?dl=0 -O cudnn.tgz')
 os.system('rm -rf /opt/cudnn/')
@@ -85,8 +86,8 @@ os.system('sudo timedatectl set-timezone Asia/Jerusalem')
 os.system('sudo updatedb')
 
 
+os.system('sudo apt-get install --reinstall nvidia-375-dev')
 
-# cd ~ ; ./src/mydevtools/install-opencv.sh | tee output_opencv.txt
 
 # MANUAL
 # NOMACHINE
