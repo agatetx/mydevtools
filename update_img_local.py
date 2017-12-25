@@ -91,6 +91,12 @@ os.system('apt -y remove nvidia-3*')
 os.system('apt -y install nvidia-375-dev')
 
 
+# Nomachine
+os.system('wget http://download.nomachine.com/download/6.0/Linux/nomachine_6.0.66_2_amd64.deb')
+os.system('dpkg -i nomachine_6.0.66_2_amd64.deb')
+
+
+
 os.system('echo ..............................................................................')
 os.system('echo All packages have been installed sucessfully (hopefully).')
 os.system('echo Cheers!')
