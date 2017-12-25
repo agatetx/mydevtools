@@ -1,6 +1,9 @@
 
 import os
 
+os.system("apt-get -y update")
+os.system("apt-get -y upgrade")
+
 user = 'USERNAME'
 #careate bush script for install libs
 apt_packs=[
@@ -35,8 +38,14 @@ os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
 os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
 os.system("apt-get install -y python-pip python3-pip")
+
 os.system("pip3 install numpy scipy zmq spyder cython ipdb rpdb jupyter scikit-image cffi sklearn h5py tqdm")
 os.system("pip install numpy scipy zmq ipdb rpdb scikit-image cffi sklearn h5py tqdm")
+
+
+#Jupyter Lab
+os.system("pip install jupyterlab")
+os.system("jupyter serverextension enable --py jupyterlab --sys-prefix")
 
 
 # wxPython
