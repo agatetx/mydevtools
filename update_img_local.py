@@ -28,6 +28,7 @@ apt_packs=[
     "vlc",
     "htop",
     "locate",
+    "iotop",
     ]
 for p in apt_packs:
     os.system("apt-get install -y "+p)
