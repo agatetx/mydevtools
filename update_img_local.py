@@ -83,11 +83,18 @@ os.system('tar -xvzf cudnn-5.1.tgz -C /opt/cudnn-5.1/')
 #os.system('mkdir /opt/cudnn/')
 os.system('''echo 'export LD_LIBRARY_PATH=/opt/cudnn/cuda/lib64:$LD_LIBRARY_PATH' >>~/.bashrc''')
 os.system('sudo timedatectl set-timezone Asia/Jerusalem')
-os.system('sudo updatedb')
+os.system('sudo updatedb &> /dev/null')
 
 
-os.system('sudo apt-get install --reinstall nvidia-375-dev')
+# Handle nvidia version HELL
+os.system('sudo apt -y remove nvidia-3*')
+os.system('sudo apt-get -y install nvidia-375-dev')
 
+
+os.system('echo ..............................................................................')
+os.system('echo All packages installed finished sucessfully.')
+os.system('echo Cheers!')
+os.system('echo ..............................................................................')
 
 # MANUAL
 # NOMACHINE
