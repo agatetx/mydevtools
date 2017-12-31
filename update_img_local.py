@@ -65,8 +65,6 @@ os.system('wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_instal
 os.system("dpkg -i cuda.deb")
 os.system("apt-get -y update")
 os.system("apt-get -y install cuda")
-os.system("pip3 install tensorflow-gpu")
-os.system("pip install tensorflow-gpu")
 
 
 # Cudnn 6

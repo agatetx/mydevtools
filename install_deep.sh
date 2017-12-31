@@ -8,4 +8,5 @@ sudo pip install torchvision
 #sudo pip3 install dlib
 sudo pip install visdom
 sudo pip3 install visdom
-
+sudo pip3 install tensorflow-gpu
+sudo pip install tensorflow-gpu
