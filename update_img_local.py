@@ -29,6 +29,7 @@ apt_packs=[
     "htop",
     "locate",
     "iotop",
+    "gparted",
     ]
 for p in apt_packs:
     os.system("apt-get install -y "+p)
