@@ -41,7 +41,7 @@ cd ../opencv
 git checkout 3.3.0
 mkdir build
 cd build
-cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DWITH_OPENCL=OFF -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
 make -j20
 sudo make install
 sudo ldconfig
