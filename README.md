@@ -16,5 +16,5 @@ Option 2 - Install packages separately:
 - sudo python install_main_body.py
 - sudo python install_cuda.py
 - ./install_opencv.sh
-- sudo ./install_deep.sh --use_cuda
+- sudo python install_deep.py --use_cuda
 - python single_time_setups.py
