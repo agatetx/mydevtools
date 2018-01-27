@@ -4,7 +4,7 @@ These are my personal scripts to automatically install a linux 16.x machine with
 
 Usage instructions:
 Option 1 - Install full machine:
-- sudo apt-get install git, python
+- sudo apt-get -y install git, python
 - git clone https://github.com/agatetx/mydevtools.git
 - cd mydevtools
 - sudo python install_machine.py --install_cuda --install_deep
