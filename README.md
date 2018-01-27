@@ -18,3 +18,7 @@ Option 2 - Install packages separately:
 - ./install_opencv.sh
 - sudo python install_deep.py --use_cuda
 - python single_time_setups.py
+
+Option 3 - Install a fresh EC2 instance:
+
+ssh -i "somekey.pem" ubuntu@some-instance.com "sudo apt-get install -y git python; git clone https://github.com/agatetx/mydevtools.git; cd mydevtools; git pull; sudo python install_machine.py --install_cuda --install_deep"
