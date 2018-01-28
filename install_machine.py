@@ -17,7 +17,7 @@ if args.install_cuda:
 os.system('./install_opencv.sh')
 
 if args.install_deep:
-    os.system('sudo ./install_deep.sh ' + '--use_cuda' if args.install_cuda else '')
+    os.system('sudo python install_deep.py ' + '--use_cuda' if args.install_cuda else '')
 
 
 
