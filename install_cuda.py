@@ -30,4 +30,4 @@ if 0:
 
 # Handle nvidia version HELL
 os.system('apt -y remove nvidia-3*')
-os.system('apt -y install nvidia-375-dev')
+os.system('apt -y --allow-unauthenticated install nvidia-375-dev')
