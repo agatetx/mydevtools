@@ -1,5 +1,10 @@
 import os
 
+#Purge ALL nvidia
+os.system('apt -y purge nvidia*')
+os.system('apt -y purge cuda*')
+
+
 # Cuda
 os.system('wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64-deb -O cuda.deb')
 os.system('sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub')
