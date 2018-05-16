@@ -10,7 +10,7 @@ os.system('wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_install
 os.system('sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub')
 os.system("dpkg -i cuda.deb")
 os.system("apt-get -y update")
-os.system("apt-get -y install cuda")
+os.system("apt-get -y --allow-unauthenticated install cuda")
 os.system("wget https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/1/cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64-deb")
 os.system("dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64-deb")
 
