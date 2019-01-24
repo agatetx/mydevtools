@@ -7,8 +7,6 @@ os.system("apt-get -y upgrade")
 user = 'USERNAME'
 #careate bush script for install libs
 apt_packs=[
-    'python-pip',
-    'python3-pip',
     'ffmpeg',
     "screen",
     "git-gui",
@@ -38,6 +36,8 @@ for p in apt_packs:
 
 
 # Python3 tools
+
+os.system("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py; python get-pip.py")
 os.system("add-apt-repository -y ppa:mystic-mirage/pycharm")
 os.system("apt-get update")
 os.system("apt-get install -y pycharm-community")
