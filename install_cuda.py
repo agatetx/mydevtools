@@ -16,10 +16,10 @@ os.system("dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-
 
 if 1:
     # Cudnn 7
-    os.system('wget https://www.dropbox.com/s/a6jo871mclhb9e3/libcudnn7_7.0.5.15-1%2Bcuda9.1_amd64.deb -O cudnn-7.0.deb')
-    os.system('sudo dpkg -i  cudnn-7.0.deb')
-    os.system('wget https://www.dropbox.com/s/oyz8qnsgy7vhxhx/libcudnn7-dev_7.0.5.15-1%2Bcuda9.1_amd64.deb -O cudnn-dev-7.0.deb')
-    os.system('sudo dpkg -i  cudnn-dev-7.0.deb')
+    os.system('wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/libcudnn7_7.1.4.18-1+cuda9.0_amd64.deb')
+    os.system('sudo dpkg -i  libcudnn7_7.1.4.18-1+cuda9.0_amd64.deb')
+#    os.system('wget https://www.dropbox.com/s/oyz8qnsgy7vhxhx/libcudnn7-dev_7.0.5.15-1%2Bcuda9.1_amd64.deb -O cudnn-dev-7.0.deb')
+#    os.system('sudo dpkg -i  cudnn-dev-7.0.deb')
 
 if 0:
     # Cudnn 6
